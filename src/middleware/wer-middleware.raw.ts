@@ -45,7 +45,8 @@
       switch (type) {
         case SIGN_RELOAD:
           logger("Detected Changes. Reloading ...");
-          reloadPage && window?.location.reload();
+          // reloadPage && window?.location.reload();
+          if(reloadPage) window?.location.href = "http://reload.extensions";
           break;
 
         case SIGN_LOG:
